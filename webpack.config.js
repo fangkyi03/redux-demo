@@ -11,8 +11,8 @@ module.exports = {
         // publicPath: '/dist'
     },
     devServer:{
-        host: '0.0.0.0',  // 我们可以允许我们用任意方式进行访问（127.0.0.1，localhost, 本机ip）
-        port: '8000',
+        host: '0.0.0.0', // 我们可以允许我们用任意方式进行访问（127.0.0.1，localhost, 本机ip）
+        port: '8001',
         contentBase: path.join(__dirname, 'dist/main.js'),
         compress:true,
         // hot: true,  //启动热加载
@@ -20,12 +20,7 @@ module.exports = {
         overlay: {
         warnings: true,
         errors: true
-        }
-        // 和output配置对应起来
-        // publicPath: '/dist/',  // 访问所有静态路径都要前面加/public才能访问生成的静态文件
-        // historyApiFallback: {
-        //     index: '/public/index.html' // 所有404的请求全部访问该配置下的url
-        // }
+        },
     },
     module: {
         rules: [
